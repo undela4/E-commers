@@ -65,12 +65,11 @@ return (
 
 
 
-
-
 function CouroselItem({img}){
 return(
   <div className="carousel-item active">
- <img src={img} class="d-block w-60" alt="..."/> 
+    
+ <img src={img} alt="..."/> 
   </div>
   
 )

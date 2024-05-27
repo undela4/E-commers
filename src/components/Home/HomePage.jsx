@@ -6,6 +6,7 @@ import data from './carousel-2/data';
 import FluidCard from './container-fluid/fluidCard';
 import {productCoverImg, fh1,fh2,fh4,fh5,fh6,fh7,fh8 } from 'D:/Projects/E-commers/E-commers/src/assets/img.js';
 
+
 const cards = [
   { img: productCoverImg, title: "T-Shirt", category: "Clothing", price: "15", delprice: "30", colors: ['red', 'blue', 'orange', 'pink'] },
   { img: fh1, title: "Jeans", category: "Clothing", price: "40", delprice: "80", colors: ['green', 'yellow', 'blue', 'purple'] },
@@ -22,14 +23,14 @@ const cards = [
 export default function HomePage() {
   return (
     <>
-    <Carousel  imgonly={true} />
+    <Carousel imgonly={true} />
 
     <Page/>
 
     <ProductCard data={cards}/>
 
     <Carousel data={data} imgonly={false}/>
-    
+
     <FluidCard/>
     
     </>

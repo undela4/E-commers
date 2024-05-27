@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { Toaster } from 'react-hot-toast';
 
 export default function App() {
   return (
@@ -10,20 +11,21 @@ export default function App() {
 }
 
 
-import Routes from './Routes';
+import RoutesC from './Routes';
 import HomePage from './components/Home/HomePage';
-import Navbar from 'D:/Projects/E-commers/E-commers/src/components/Navbar/Navbar.jsx';
 import Footer from './components/Footer/Footer';
+import { ToastContainer } from 'react-bootstrap';
 
 
 function Start() {
   return (
     <>
-    <Navbar/>
-    <Routes/>
-    <HomePage/>
+    <RoutesC/>
     <Footer/>
-      
-    </>
+    <Toaster
+        position="bottom-left"
+        reverseOrder={true}
+      />
+      </>
   )
 }

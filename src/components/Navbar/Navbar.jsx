@@ -93,9 +93,10 @@ function Nav() {
             </div>
 
             <div className="nav-items-right">
-              <NavLink to="/"  className="NavLink"><RxAvatar />  Login /
-              <NavLink to="/"  className="NavLink">  Register</NavLink>
+              <NavLink to="/login"  className="NavLink" ><RxAvatar />  Login /
               </NavLink>
+              <NavLink to="/signup"  className="NavLink" >  Register</NavLink>
+
               <NavLink to="/"  className="NavLink"><IoIosSearch className='nav-icons' /></NavLink>
               <NavLink to="/"  className="NavLink"><CiShoppingCart className='nav-icons'/><span> 1</span></NavLink>
               <NavLink to="/"  className="NavLink"><CiHeart className='nav-icons'/><span> 1</span></NavLink>

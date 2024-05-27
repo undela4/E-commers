@@ -57,7 +57,6 @@ export default function Footer() {
 
 function Items({title,linkes})
 {
-    console.log(linkes)
     return(
         <div className="col-2">
         <h5 className='fw-bold'>{title}</h5>

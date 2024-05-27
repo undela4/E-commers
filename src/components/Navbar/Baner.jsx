@@ -22,7 +22,7 @@ export default function Baner() {
 
        </div>
        <div className="">
-       <MdAttachEmail /><span> muraliundela369@gmail.com</span>
+       <MdAttachEmail /><span> muraliundela143@gmail.com</span>
 
        </div>
    

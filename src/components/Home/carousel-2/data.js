@@ -1,4 +1,4 @@
-import { carouselInner1 } from "../../../assets/img"
+import { carouselInner1,carouselInner2 } from "../../../assets/img"
 
 
 export default[

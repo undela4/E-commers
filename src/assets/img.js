@@ -13,7 +13,11 @@ import fh6 from './img/fixed-height-6.png';
 import fh7 from './img/fixed-height-7.png';
 import fh8 from './img/fixed-height-8.png';
 import carouselInner1 from './img/shop-hero-2-png-picture-1.png';
+import carouselInner2 from './img/shop-hero-1-product-slide-1.jpg';
 import fluidcard from './img/fluidcard.png';
+import login1 from './img/login1.jpg';
+import login2 from './img/login2.jpg';
+import login3 from './img/login2.png';
 
 
 
@@ -23,6 +27,10 @@ import fluidcard from './img/fluidcard.png';
 
 
 
-export {Bandage,carouselInner,filter,filterWomen,filterAccessories,
+
+
+
+export {Bandage,carouselInner,filter,filterWomen,filterAccessories,carouselInner2,
     filterkids,productCoverImg,fh1,fh2,fh4,fh5,fh6,fh7,fh8,carouselInner1,fluidcard
+    ,login1,login2,login3
 };
