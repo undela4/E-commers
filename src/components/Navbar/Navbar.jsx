@@ -51,13 +51,6 @@ const navlinks=[
   },
   {
     id:4,
-    title:"Blog",
-    path:"/blog",
-    cName:"nav-links"
-
-  },
-  {
-    id:5,
     title:"Contact",
     path:"/contact",
     cName:"nav-links"

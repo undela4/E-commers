@@ -4,7 +4,7 @@ import Navbar from 'D:/Projects/E-commers/E-commers/src/components/Navbar/Navbar
 import Login from './components/Authentication/Login/Login';
 import Signup from './components/Authentication/SignUp/Signup';
 import HomePage from './components/Home/HomePage';
-
+import ProductLIst from './components/ProductListPage/ProductLIst';
 
 
 
@@ -16,6 +16,8 @@ export default function RoutesC() {
         <Route  path="/" element={<HomePage/>} />
         <Route  path="/login" element={<Login />} />
         <Route  path="/signup" element={<Signup/>} />
+        <Route  path="/product/:name" element={<ProductLIst/>} />
+
       </Routes>
 
     </>

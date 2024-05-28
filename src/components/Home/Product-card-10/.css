@@ -24,7 +24,7 @@ h5{
 
 } */
 .card-content{
-    text-align: center;
+    text-align: start;
     margin:1rem 0 4rem;
 
 }
@@ -35,4 +35,8 @@ h5{
 .card-content a{
     text-decoration: none;
     color: black;
+}
+.heart{
+    position: relative;
+    right:19%;
 }
