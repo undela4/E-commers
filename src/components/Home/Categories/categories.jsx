@@ -44,7 +44,7 @@ export default function Categories() {
         {
             catadata.map((item,index)=>{
                 return(
-                    <div className="category-item" key={index} onClick={()=>nav(`/product/:${item.name}`)}>
+                    <div className="category-item" key={index} onClick={()=>nav(`/product/${item.name}`)}>
                         <img src={item.img} alt={item.name} />
                         <h3>{item.name}</h3>
                     </div>

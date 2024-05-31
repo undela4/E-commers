@@ -38,7 +38,7 @@ export default function Footer() {
             <div className="col-4">
             <h4>Get In Touch</h4>
                 
-            <div class="input-group mb-3">
+            <div className="input-group mb-3">
             <input type="text" className="form-control" style={{height:"50px"}} placeholder="Your Email" 
             aria-label="Recipient's username" aria-describedby="basic-addon2"/>
 
@@ -69,9 +69,9 @@ function Items({title,linkes})
 
       
                {
-                linkes.map((link)=>{
+                linkes.map((link,index)=>{
                     return(
-                        <div className="mt-3 ">
+                        <div className="mt-3 " key={index}>
                         <a href="#" className="text-dark text-decoration-none" >{link}</a>
 
                         </div>

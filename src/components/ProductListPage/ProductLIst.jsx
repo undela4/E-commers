@@ -1,14 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './productList.css'
 import { cards } from '../Home/HomePage';
 import { useParams } from 'react-router-dom';
 import Card from './ProductCart/Card';
 import { RiArrowRightSLine } from "react-icons/ri";
+import { Outlet } from 'react-router-dom';
 
 
 export default function ProductLIst() 
 {
     
+const nav=useNavigate();
 const {name}=useParams();
 
 const filters=[
@@ -39,7 +42,7 @@ const filters=[
   return (
     <>
     <div className='containe mb-5'>
-      <h5 className='mt-4 mb-5'>Home <RiArrowRightSLine /> {name.substring(1,)}</h5>
+      <h5 className='mt-4 mb-5'>Home <RiArrowRightSLine /> {name}</h5>
 
       <div className="product-layout row">
 
@@ -57,33 +60,41 @@ const filters=[
             </div>
 
             <div className="col-9">
-                <div className="product-list ">
+                <div className="product-list " >
                 {
                     cards.map((item,key)=>{
                     return(
+                        
+                        <div onClick={()=>nav(`./${item.id}`)}  key={item.id}>
                         <Card img={item.img} title={item.title}
                         category={item.category} price={item.price} delprice={item.delprice}
                         colors={item.colors}/>
+                        </div>
+                         
                     )
 
                     })
                 }
 
                 </div>
-                <div className="product-list ">
+                <hr></hr>
+                <div className="product-list " >
                 {
                     cards.map((item,key)=>{
                     return(
+                        
+                        <div onClick={()=>nav(`./${item.id}`)}  key={item.id}>
                         <Card img={item.img} title={item.title}
                         category={item.category} price={item.price} delprice={item.delprice}
                         colors={item.colors}/>
+                        </div>
+                         
                     )
 
                     })
                 }
 
                 </div>
-
             </div>
                 
                 
@@ -92,9 +103,11 @@ const filters=[
 
 
     </div>
+<Outlet/>
 
     </>
   )
+
 }
 
 
@@ -151,3 +164,4 @@ function Dropdown({name,items,type})
         </div>
     )
 }
+

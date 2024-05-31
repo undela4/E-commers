@@ -16,12 +16,12 @@ export default function Baner() {
 
       <div className="content">
 
-        <div className="d-flex gap-5">
-       <div className="">
+        <div className="d-flex gap-5 align-items-baseline">
+       <div className="fs-5">
        <IoCallOutline /><span> +91 8688569070  </span>
 
        </div>
-       <div className="">
+       <div className="fs-5">
        <MdAttachEmail /><span> muraliundela143@gmail.com</span>
 
        </div>
@@ -32,13 +32,13 @@ export default function Baner() {
           <h6>Follow Us  and get a chance to win 80% off</h6>
         </div>
 
-        <div className="d-flex gap-3 align-items-center">
+        <div className="d-flex gap-3 align-items-center fs-5">
           <h6>Follow Us :  </h6>
-          <FaYoutube   className='fs-5'/>
-          <FaFacebook  className='fs-5'/>
-          <FaInstagram className='fs-5'/>
-          <FaTwitter   className='fs-5'/>
-          <button type="button" onClick={()=>{r.current.style.display="none" }} class="ms-5 btn-close btn-close-white" aria-label="Close"></button>
+          <FaYoutube   />
+          <FaFacebook  />
+          <FaInstagram />
+          <FaTwitter   />
+          <button type="button" onClick={()=>{r.current.style.display="none" }} className="ms-5 btn-close btn-close-white" aria-label="Close"></button>
 
         </div>
 

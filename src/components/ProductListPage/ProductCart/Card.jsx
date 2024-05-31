@@ -2,8 +2,10 @@ import React from 'react';
 import './card.css'
 import { CiStar } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
+import { cards } from '../../Home/HomePage';
 
 export default function Card({img,title,category,price,delprice}) {
+
   return (
     <>
     <div className="product-card-container">
@@ -16,8 +18,8 @@ export default function Card({img,title,category,price,delprice}) {
                       <div className="d-flex justify-content-between">
                           <div className="">
                               {
-                                  [1,2,3,4,5].map((item)=>{
-                                      return(<CiStar className='fs-5'/>)
+                                  [1,2,3,4,5].map((item ,index)=>{
+                                      return(<CiStar className='fs-5' key={index}/>)
                                   })
                               }
                           </div>
